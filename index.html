@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive loading animation</title>
+    <title>color guessing game</title>
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
 <body>
-    <section class="wrapper">
-        <div class="loader">
-            <div class="loading one "></div>
-            <div class="loading two"></div>
-            <div class="loading three"></div>
-            <div class="loading four"></div>
+    
+<div id="displayContainer">
+    <div class="header flex-space">
+        <div class="title">
+            <p>Color Guessing Game</p>
         </div>
-    </section>
-    
-    
+        <div class="timer"></div>
+    </div>
+    <div id="container"></div>
+    <div class="flex-space">
+        <div class="number-of-count">
+            <span class="number-of-question"></span>
+        </div>
+        <div id="nextButton">next</div>
+    </div>
+</div>
+<div class="startScreen">
+    <button id="startButton">Start</button>
+</div>
+<div class="score-container hide">
+    <div id="user-score"></div>
+    <button id="restart">Restart</button>
+</div>
 </body>
 </html>
